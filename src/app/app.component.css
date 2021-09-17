@@ -1,0 +1,28 @@
+.container{
+  margin:auto;
+  margin-top: 10px;
+  width: 100vw;
+  height: auto;
+
+
+  display:grid;
+
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 1fr;
+
+}
+
+.header{
+  background-color:darkgrey;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.content_large{
+  grid-row-start: 2;
+  grid-row-end:span 2;
+}
